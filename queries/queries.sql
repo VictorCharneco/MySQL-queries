@@ -14,10 +14,10 @@ SELECT nombre, precio AS precio_eur, precio * 1 AS precio_usd FROM producto;
 SELECT nombre AS 'nom del producte', precio AS euros, ROUND(precio * 1.1,2) AS dòlars FROM producto;
 
 -- 6. Llista els noms (nombre) i els preus de tots els productes de la taula producto, convertint els noms a majúscula.
-SELECT UPPER(nombre) AS nombre, precio FROM producto;
+SELECT UPPER(nombre) AS 'nombre', precio FROM producto;
 
 -- 7. Llista els noms (nombre) i els preus (precio) dels productes de la taula producto, convertint els noms a minúscula.
-SELECT LOWER(nombre) AS nombre, precio FROM producto;
+SELECT LOWER(nombre) AS 'nombre', precio FROM producto;
 
 -- 8. Llista el nom de tots els fabricants en una columna, i en una altra columna obtingui en majúscules els dos primers caràcters del nom del fabricant (iniciales).
 SELECT nombre, UPPER(SUBSTRING(nombre,1,2)) AS iniciales FROM fabricante;
