@@ -6,7 +6,7 @@
 
 ## ✅ Query 1: Correcto
 
-⏱ Tiempo: 0.34 ms
+⏱ Tiempo: 0.36 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
@@ -30,14 +30,14 @@
 
 ## ✅ Query 4: Correcto
 
-⏱ Tiempo: 0.30 ms
+⏱ Tiempo: 0.29 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 5: Correcto
 
-⏱ Tiempo: 0.30 ms
+⏱ Tiempo: 0.28 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
@@ -54,7 +54,7 @@
  DISCO SSD 1 TB | 150.99
 ```
 
-⏱ Tiempo: 0.29 ms
+⏱ Tiempo: 0.28 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
@@ -71,7 +71,7 @@
  disco ssd 1 tb | 150.99
 ```
 
-⏱ Tiempo: 0.33 ms
+⏱ Tiempo: 0.28 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
