@@ -2,38 +2,89 @@
 
 
 ## 📈 Resumen
-✅ 1 correctas de 41 queries
+✅ 4 correctas de 41 queries
 
 ## ✅ Query 1: Correcto
 
-⏱ Tiempo: 0.36 ms
+⏱ Tiempo: 0.35 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
-## ❌ Query 2: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre, precio FROM producto ORDER BY nombre ASC' at line 2
+## ✅ Query 2: Correcto
 
+⏱ Tiempo: 0.31 ms
+🔍 No se usó ningún índice en esta consulta.
 
-## ❌ Query 3: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * FROM producto ORDER BY nombre ASC' at line 2
+---
 
+## ✅ Query 3: Correcto
 
-## ❌ Query 4: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre, precio as precio_eur, precio as precio_usd FROM producto' at line 2
+⏱ Tiempo: 0.29 ms
+🔍 No se usó ningún índice en esta consulta.
 
+🚨 **Problemas detectados:**
+⚠️ Evitar `SELECT *`. Usar solo las columnas necesarias.
 
-## ❌ Query 5: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre, precio as euros, ROUND (precio,2) * 1.1 as dòlars FRO' at line 2
+---
 
+## ✅ Query 4: Correcto
 
-## ❌ Query 6: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT UPPER(nombre), precio FROM producto ORDER BY nombre ASC, precioÂ' at line 2
+⏱ Tiempo: 0.28 ms
+🔍 No se usó ningún índice en esta consulta.
 
+---
 
-## ❌ Query 7: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT LOWER(nombre), precio FROM producto ORDER BY nombre ASC, precioÂ' at line 2
+## ❌ Query 5: Incorrecto
+```diff
+--- 
++++ 
+@@ -1,4 +1,4 @@
+-nom del producte | euros | dòlars
++nombre | euros | dòlars
+ Disco duro SATA3 1TB | 86.99 | 95.69
+ Memoria RAM DDR4 8GB | 120.00 | 132.00
+ Disco SSD 1 TB | 150.99 | 166.09
+```
 
+⏱ Tiempo: 0.30 ms
+🔍 No se usó ningún índice en esta consulta.
+
+---
+
+## ❌ Query 6: Incorrecto
+```diff
+--- 
++++ 
+@@ -1,4 +1,4 @@
+-nombre | precio
++UPPER(nombre) | precio
+ DISCO DURO SATA3 1TB | 86.99
+ MEMORIA RAM DDR4 8GB | 120.00
+ DISCO SSD 1 TB | 150.99
+```
+
+⏱ Tiempo: 0.31 ms
+🔍 No se usó ningún índice en esta consulta.
+
+---
+
+## ❌ Query 7: Incorrecto
+```diff
+--- 
++++ 
+@@ -1,4 +1,4 @@
+-nombre | precio
++LOWER(nombre) | precio
+ disco duro sata3 1tb | 86.99
+ memoria ram ddr4 8gb | 120.00
+ disco ssd 1 tb | 150.99
+```
+
+⏱ Tiempo: 0.30 ms
+🔍 No se usó ningún índice en esta consulta.
+
+---
 
 ## ❌ Query 8: Error
 - **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre, UPPER(SUBSTRING(nombre,1,2)) AS iniciales FROM fabricante' at line 2
