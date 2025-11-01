@@ -2,25 +2,25 @@
 
 
 ## 📈 Resumen
-✅ 7 correctas de 41 queries
+✅ 19 correctas de 41 queries
 
 ## ✅ Query 1: Correcto
 
-⏱ Tiempo: 0.38 ms
+⏱ Tiempo: 0.33 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 2: Correcto
 
-⏱ Tiempo: 0.33 ms
+⏱ Tiempo: 0.29 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 3: Correcto
 
-⏱ Tiempo: 0.33 ms
+⏱ Tiempo: 0.29 ms
 🔍 No se usó ningún índice en esta consulta.
 
 🚨 **Problemas detectados:**
@@ -30,83 +30,149 @@
 
 ## ✅ Query 4: Correcto
 
-⏱ Tiempo: 0.34 ms
+⏱ Tiempo: 0.28 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 5: Correcto
 
-⏱ Tiempo: 0.32 ms
+⏱ Tiempo: 0.29 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 6: Correcto
 
-⏱ Tiempo: 0.30 ms
+⏱ Tiempo: 0.33 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
 ## ✅ Query 7: Correcto
 
-⏱ Tiempo: 0.31 ms
+⏱ Tiempo: 0.27 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
 
-## ❌ Query 8: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre, UPPER(SUBSTRING(nombre,1,2)) AS iniciales FROM fabricante' at line 2
+## ✅ Query 8: Correcto
 
+⏱ Tiempo: 0.29 ms
+🔍 No se usó ningún índice en esta consulta.
 
-## ❌ Query 9: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre, ROUND(precio,1) as precio FROM producto' at line 2
+---
 
+## ✅ Query 9: Correcto
 
-## ❌ Query 10: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre, ROUND(precio,0) as precio_truncado FROM producto ORDER BY' at line 2
+⏱ Tiempo: 0.27 ms
+🔍 No se usó ningún índice en esta consulta.
 
+---
 
-## ❌ Query 11: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT codigo_fabricante FROM producto ORDER BY codigo_fabricante ASC' at line 2
+## ❌ Query 10: Incorrecto
+```diff
+--- 
++++ 
+@@ -1,12 +1,12 @@
+ nombre | precio truncado
+ Disco duro SATA3 1TB | 86.00
+-Memoria RAM DDR4 8GB | 120.00
+ Disco SSD 1 TB | 150.00
+ GeForce GTX 1050Ti | 185.00
+ GeForce GTX 1080 Xtreme | 755.00
++Impresora HP Deskjet 3720 | 59.00
++Impresora HP Laserjet Pro M26nw | 180.00
++Memoria RAM DDR4 8GB | 120.00
+ Monitor 24 LED Full HD | 202.00
+ Monitor 27 LED Full HD | 245.00
++Portátil Ideapd 320 | 444.00
+ Portátil Yoga 520 | 559.00
+-Portátil Ideapd 320 | 444.00
+-Impresora HP Deskjet 3720 | 59.00
+-Impresora HP Laserjet Pro M26nw | 180.00
+```
 
+⏱ Tiempo: 0.28 ms
+🔍 No se usó ningún índice en esta consulta.
 
-## ❌ Query 12: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT codigo_fabricante FROM producto ORDER BY codigo_fabricant' at line 2
+---
 
+## ✅ Query 11: Correcto
 
-## ❌ Query 13: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre FROM fabricante ORDER BY nombre ASC' at line 2
+⏱ Tiempo: 0.29 ms
+🔍 No se usó ningún índice en esta consulta.
 
+---
 
-## ❌ Query 14: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre FROM fabricante ORDER BY nombre DESC' at line 2
+## ✅ Query 12: Correcto
 
+⏱ Tiempo: 0.27 ms
+✅ Se usó índice(s) en la consulta: codigo_fabricante
 
-## ❌ Query 15: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre, precio FROM producto ORDER BY nombre ASC, precio DESC' at line 2
+---
 
+## ✅ Query 13: Correcto
 
-## ❌ Query 16: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * FROM fabricante LIMIT 5' at line 2
+⏱ Tiempo: 0.27 ms
+🔍 No se usó ningún índice en esta consulta.
 
+---
 
-## ❌ Query 17: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * FROM fabricante LIMIT 2 OFFSET 3' at line 2
+## ✅ Query 14: Correcto
 
+⏱ Tiempo: 0.28 ms
+🔍 No se usó ningún índice en esta consulta.
 
-## ❌ Query 18: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre, precio FROM producto ORDER BY precio ASC LIMIT 1' at line 2
+---
 
+## ✅ Query 15: Correcto
 
-## ❌ Query 19: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre, precio FROM producto ORDER BY precio DESC LIMIT 1' at line 2
+⏱ Tiempo: 0.27 ms
+🔍 No se usó ningún índice en esta consulta.
 
+---
 
-## ❌ Query 20: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre FROM producto WHERE codigo_fabricante='2'' at line 2
+## ✅ Query 16: Correcto
 
+⏱ Tiempo: 0.26 ms
+🔍 No se usó ningún índice en esta consulta.
+
+🚨 **Problemas detectados:**
+⚠️ Evitar `SELECT *`. Usar solo las columnas necesarias.
+
+---
+
+## ✅ Query 17: Correcto
+
+⏱ Tiempo: 0.26 ms
+🔍 No se usó ningún índice en esta consulta.
+
+🚨 **Problemas detectados:**
+⚠️ Evitar `SELECT *`. Usar solo las columnas necesarias.
+
+---
+
+## ✅ Query 18: Correcto
+
+⏱ Tiempo: 0.27 ms
+🔍 No se usó ningún índice en esta consulta.
+
+---
+
+## ✅ Query 19: Correcto
+
+⏱ Tiempo: 0.28 ms
+🔍 No se usó ningún índice en esta consulta.
+
+---
+
+## ✅ Query 20: Correcto
+
+⏱ Tiempo: 0.29 ms
+✅ Se usó índice(s) en la consulta: codigo_fabricante
+
+---
 
 ## ❌ Query 21: Error
 - **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT producto.nombre, producto.precio, fabricante.nombre as nombre_del_fa' at line 2
