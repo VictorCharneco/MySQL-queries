@@ -2,30 +2,9 @@
 
 
 ## 📈 Resumen
-✅ 0 correctas de 41 queries
+✅ 1 correctas de 41 queries
 
-## ❌ Query 1: Incorrecto
-```diff
---- 
-+++ 
-@@ -1,12 +1,12 @@
- nombre
- Disco duro SATA3 1TB
--Memoria RAM DDR4 8GB
- Disco SSD 1 TB
- GeForce GTX 1050Ti
- GeForce GTX 1080 Xtreme
-+Impresora HP Deskjet 3720
-+Impresora HP Laserjet Pro M26nw
-+Memoria RAM DDR4 8GB
- Monitor 24 LED Full HD
- Monitor 27 LED Full HD
-+Portátil Ideapd 320
- Portátil Yoga 520
--Portátil Ideapd 320
--Impresora HP Deskjet 3720
--Impresora HP Laserjet Pro M26nw
-```
+## ✅ Query 1: Correcto
 
 ⏱ Tiempo: 0.36 ms
 🔍 No se usó ningún índice en esta consulta.
