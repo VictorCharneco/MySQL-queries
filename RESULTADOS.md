@@ -4,9 +4,33 @@
 ## 📈 Resumen
 ✅ 0 correctas de 41 queries
 
-## ❌ Query 1: Error
-- **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre FROM producto ORDER BY nombre ASC' at line 2
+## ❌ Query 1: Incorrecto
+```diff
+--- 
++++ 
+@@ -1,12 +1,12 @@
+ nombre
+ Disco duro SATA3 1TB
+-Memoria RAM DDR4 8GB
+ Disco SSD 1 TB
+ GeForce GTX 1050Ti
+ GeForce GTX 1080 Xtreme
++Impresora HP Deskjet 3720
++Impresora HP Laserjet Pro M26nw
++Memoria RAM DDR4 8GB
+ Monitor 24 LED Full HD
+ Monitor 27 LED Full HD
++Portátil Ideapd 320
+ Portátil Yoga 520
+-Portátil Ideapd 320
+-Impresora HP Deskjet 3720
+-Impresora HP Laserjet Pro M26nw
+```
 
+⏱ Tiempo: 0.37 ms
+🔍 No se usó ningún índice en esta consulta.
+
+---
 
 ## ❌ Query 2: Error
 - **Descripción**: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT nombre, precio FROM producto ORDER BY nombre ASC' at line 2
