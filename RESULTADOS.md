@@ -27,7 +27,7 @@
 -Impresora HP Laserjet Pro M26nw
 ```
 
-⏱ Tiempo: 0.37 ms
+⏱ Tiempo: 0.36 ms
 🔍 No se usó ningún índice en esta consulta.
 
 ---
