@@ -1,5 +1,5 @@
 -- 1. Llista el nom de tots els productes que hi ha en la taula producto.
-SELECT nombre FROM producto ORDER BY nombre ASC;
+SELECT nombre FROM producto ORDER BY nombre ASC;
 
 -- 2. Llista els noms i els preus de tots els productes de la taula producto.
 SELECT nombre, precio FROM producto ORDER BY nombre ASC;
